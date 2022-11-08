@@ -17,9 +17,13 @@ body {
 nav {
   display: flex;
   align-items: center;
-  background-color: #21222a;
+  background-color: #ffffff;
   height: 90px;
   padding: 2rem 1.75rem;
+}
+
+nav.dark {
+  background: #21222a;
 }
 
 .nav--logo_text,
@@ -42,6 +46,61 @@ nav {
 .nav--title {
   color: #deebf8;
   font-weight: 600;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 30px;
+  height: 15px;
+  background: #2b283a;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #f5f5f5;
+}
+
+.toggler--slider--circle {
+  width: 13px;
+  height: 13px;
+  background: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2b283a;
+}
+
+nav.dark .toggler--dark {
+  color: #ffffff;
+}
+.toggler--dark {
+  color: #d5d4d8;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
 }
 
 /* Main */

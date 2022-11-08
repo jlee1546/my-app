@@ -20,6 +20,8 @@ nav {
   background-color: #ffffff;
   height: 90px;
   padding: 2rem 1.75rem;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
 nav.dark {
@@ -106,15 +108,20 @@ nav.dark .toggler--slider {
 /* Main */
 
 main {
-  background-color: #282d35;
+  background-color: #ffffff;
   background-image: url("./reactjs-icon\ 2.png");
   background-repeat: no-repeat;
 
   background-position: right 48%;
   height: 100vh;
   overflow: hidden;
-  color: #ffffff;
+  color: #2b283a;
   padding: 57px 27px;
+}
+
+main.dark {
+  background-color: #282d35;
+  color: white;
 }
 
 .main--title {
